@@ -42,9 +42,7 @@
   <div class="citation_text">
     {%- assign title = citation.title | default: "" -%}
     <div class="citation_title">
-      <a href="{{ link }}">
-        {{ title }}
-      </a>
+      {{ title }}
     </div>
 
     {%- assign authors = citation.authors | default: emptyarray -%}
