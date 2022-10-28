@@ -19,4 +19,4 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 {% include search-info.html %}
 
-{% include list.html data="patents" component="citation" style="rich" %}
+{% include list.html data="patents" component="patents" style="rich" %}
