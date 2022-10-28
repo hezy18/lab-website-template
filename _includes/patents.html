@@ -56,8 +56,9 @@
     {%- assign publisher = citation.publisher | default: "" -%}
     {%- assign date = citation.date | default: "[no date info]" -%}
     <div class="citation_details">
-      {{ publisher }}&nbsp; · &nbsp;{{ date | date: "%Y" }} 
+      {{ publisher }}&nbsp; · &nbsp;{{ date | date: "%d %b %Y" }} 
       {% comment %} 
+      If only show year,
       TODO: The date in previous line is a work-around, adapting the power from liquid filter 'date'.
       It's preferred to implement a function parsing date with only years, 
       instead of providing a fake month-day(01-01) attributes. Thank you.
